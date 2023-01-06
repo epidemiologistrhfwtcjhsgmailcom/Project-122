@@ -28,11 +28,11 @@ recognition.onresult = function(event) {
     to_number = Number(content);
     console.log(to_number);
     if(Number.isInteger(to_number)){
-      document.getElementById("status").innerHTML = “Started drawing apple”;
+      document.getElementById("status").innerHTML = "Started drawing apple";
       draw_apple = "set";
     }
     else {
-      document.getElementById("status").innerHTML = “The speech has not recognized a number”;
+      document.getElementById("status").innerHTML = "The speech has not recognized a number";
     }
 
 }
@@ -54,7 +54,7 @@ function draw() {
     for(var i = 1; i <= to_number; i++){
       x = Math.floor(Math.random()*700);
       y = Math.floor(Math.random()*400);
-      Image(apple, x, y, 50, 50);
+      image(apple, x, y, 50, 50);
     }
   }
 }
